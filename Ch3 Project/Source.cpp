@@ -16,6 +16,7 @@ the specified number of cookies*/
 #include <iostream>
 #include <iomanip>
 #include <ctime>
+#include <cstdlib>
 using namespace std;
 
 int main()
@@ -32,6 +33,7 @@ int main()
 	resultButt = cuppAbutt * ingredMult;
 	resultFlour = cuppAflou * ingredMult;
 	cout << "To make " << cookiesDesired << " cookies, you'll need:\n" << std::setprecision(3) << resultSug << " cups of sugar," << resultButt << " cups of butter, and " << resultFlour << " cups of flour." << endl;
+	cin.get();
 
 		const int MIN_VAL = 100, MAX_VAL = 1000;
 
