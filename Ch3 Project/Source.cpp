@@ -15,6 +15,7 @@ the specified number of cookies*/
 
 #include <iostream>
 #include <iomanip>
+#include <ctime>
 using namespace std;
 
 int main()
@@ -32,5 +33,22 @@ int main()
 	resultFlour = cuppAflou * ingredMult;
 	cout << "To make " << cookiesDesired << " cookies, you'll need:\n" << std::setprecision(3) << resultSug << " cups of sugar," << resultButt << " cups of butter, and " << resultFlour << " cups of flour." << endl;
 
+		const int MIN_VAL = 100, MAX_VAL = 1000;
+
+		int random1, random2, answer;
+
+		unsigned seed = time(0);
+		srand(seed);
+
+		cout << "\n\nWelcome to the super mega Tutor-tron MK IV.\n\nHere's a random math problem for you to practice on!" << endl;
+		random1 = (rand() % (MAX_VAL - MIN_VAL + 1)) + MIN_VAL;
+		random2 = (rand() % (MAX_VAL - MIN_VAL + 1)) + MIN_VAL;
+
+		answer = random1 + random2;
+
+		cout << "\n" << random1 << "+" << random2 << "= ? \n" << endl;
+		cout << "Try to figure out this problem. To check your answer, press ENTER to see the solution." << endl;
+		cin.get();
+		cout << random1 << "+" << random2 << "=" << answer << endl;
 	return 0;
 }
