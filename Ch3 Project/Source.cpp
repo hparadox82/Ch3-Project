@@ -1,17 +1,20 @@
-//Ch3 Programming Project
+/*Ch3 Programming Project
 //CSC 221 63H FA24
 //Instructor Andrew Sprague
-//Austin Mollard
+Austin Mollard*/
 
 
-/*Project 1. Ingredient Adjuster
-A cookie recipe calls for the following ingredients:
- 1.5 cups of sugar
- 1 cup of butter
- 2.75 cups of flour
-The recipe produces 48 cookies with this amount of ingredients. Write a program that asks the user how
-many cookies he or she wants to make, then displays the number of cups of each ingredient needed for
-the specified number of cookies*/
+/*
+Write a program that can be used as a math tutor for a young student. The program
+should display two random numbers to be added, such as 247+129.
+
+The program should then pause while the student works on the problem. When the
+student is ready to check the answer, he or she can press a key and the program
+will display the correct solution: 247+129 = 376
+
+Use the technique we talked about in class (using cin.get) to pause the screen.
+Do NOT use system(pause).
+*/
 
 #include <iostream>
 #include <iomanip>
@@ -19,18 +22,6 @@ using namespace std;
 
 int main()
 {
-	const double cuppAsug = 1.5, cuppAbutt = 1.0, cuppAflou = 2.75;
-	double resultSug, resultButt, resultFlour, ingredMult;
-	const int cookiesOrig = 48;
-	int cookiesDesired;
-
-	cout << "You need 1.5 cups of sugar, 1 cup of butter and 2.75 cups of flour to make 48 cookies.\nHow many cookies would you like to bake?" << endl;
-	cin >> cookiesDesired;
-	ingredMult = static_cast<double>(cookiesDesired) / cookiesOrig;
-	resultSug = cuppAsug * ingredMult;
-	resultButt = cuppAbutt * ingredMult;
-	resultFlour = cuppAflou * ingredMult;
-	cout << "To make " << cookiesDesired << " cookies, you'll need:\n" << std::setprecision(3) << resultSug << " cups of sugar," << resultButt << " cups of butter, and " << resultFlour << " cups of flour." << endl;
 
 	return 0;
 }
