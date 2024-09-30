@@ -10,6 +10,7 @@ A cookie recipe calls for the following ingredients:
 The recipe produces 48 cookies with this amount of ingredients. Write a program that asks the user how
 many cookies he or she wants to make, then displays the number of cups of each ingredient needed for
 the specified number of cookies*/
+//updated to do the branch thing
 
 #include <iostream>
 #include <iomanip>
