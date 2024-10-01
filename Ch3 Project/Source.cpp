@@ -21,15 +21,20 @@ int main()
 {
 	float amount, princi, numsComp, inRate, totalinter;
 
-	cout << "Welcome to the interest earned calculator.\nThis calculates your total after one year.\nWhen prompted, please input your inputs to be inputted." << endl;
+	cout << "Welcome to the interest earned calculator.\nThis calculates your total after one year.\nWhen prompted, please input your inputs to be inputted. And calculated." << endl;
+
 	cout << "Interest rate (in decimal form, e.g. 4.25% > .0425)?" << endl;
 	cin >> inRate;
-	cout << "How many times compounded a year?" << endl;
-	cin >> numsComp;
-	cout << "Your principal?" << endl;
-	cin >> princi;
-	amount = princi * pow((1 + inRate / numsComp), numsComp);
-	totalinter = amount - princi;
-	cout << "\n\n\nInterest rate: " << inRate << "\n" << "Times compounded: " << numsComp << "\n" << "Principal: " << princi << "\n" << "Interest: " << totalinter << "\n" << "Total amount after one year: " << amount << endl;
+
+		cout << "How many times compounded a year?" << endl;
+		cin >> numsComp;
+
+			cout << "Your principal?" << endl;
+			cin >> princi;
+
+						amount = princi * pow((1 + inRate / numsComp), numsComp);
+						totalinter = amount - princi;
+
+				cout << "\n\n\nInterest rate: " << inRate << "\n" << "Times compounded: " << numsComp << "\n" << "Principal: " << princi << "\n" << "Interest: " << totalinter << "\n" << "Total amount after one year: " << amount << endl;
 	return 0;
 }
